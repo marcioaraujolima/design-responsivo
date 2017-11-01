@@ -1,0 +1,83 @@
+*{
+	box-sizing: border-box;
+}
+/* DEFINE COMPONENTE*/
+.component{
+	width: 100%;
+	margin-bottom: 80px;
+}
+/* DEFINE COLUNA*/
+.col{
+	height: 100px;
+	float: left;
+	padding: 0 15px;
+}
+/* DEFINE HERANÇA PARA COLUNAS*/
+.col:nth-child(1){
+	background-color: red;
+}
+.col:nth-child(2){
+	background-color: blue;
+}
+.col:nth-child(3){
+	background-color: green;
+}
+.col:nth-child(4){
+	background-color: yellow;
+}
+/* DEFINE PORCENTAGEM PARA GRID*/
+.col-1{
+	width: 8.333% !important;
+}
+.col-2{
+	width: 16.666% !important;
+}
+.col-3{
+	width: 25% !important;
+}
+.col-4{
+	width: 33.333% !important;
+}
+.col-5{
+	width: 41.666% !important;
+}
+.col-6{
+	width: 50% !important;
+}
+.col-7{
+	width: 58.333% !important;
+}
+.col-8{
+	width: 66.666% !important;
+}
+.col-9{
+	width: 75% !important;
+}
+.col-10{
+	width: 83.333% !important;
+}
+.col-11{
+	width: 91.666% !important;
+}
+.col-12{
+	width: 100% !important;
+}
+/* DEFINE MEDIA QUERY */
+@media (max-width: 480px) {
+	.col{
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+@media (min-width: 481px) and (max-width: 960px) {
+	.col{
+		width: 50%;
+		padding: 0 15px;
+	}
+}
+@media (min-width: 961px) {
+	.col{
+		width: 25%;
+		padding: 0 15px;
+	}
+}
